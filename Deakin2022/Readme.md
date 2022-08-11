@@ -7,7 +7,7 @@ Tensorflow Implement
 Based on Bottom-up and Top-down attention
 *P. Anderson et al., ‘Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering’*(https://arxiv.org/abs/1707.07998) 
 
-# Results(3d)
+# Results(#3)
 ![image](https://user-images.githubusercontent.com/39436745/183824428-02a66f40-30ba-4cd4-8f45-c01e9712985c.png)
 
 # Implement Details
@@ -23,8 +23,11 @@ For limitation of computation resources, we also provide a simplified visual hea
 ## Train Data
 
 We use COCO VQA Dataset as train dataset for our model cannot converge on abstract scene dataset.
-Object Detection Head: https://nlp.cs.unc.edu/data/lxmert_data/mscoco_imgfeat/train2014_obj36.zip (36 object features)
-Simplified Head: http://images.cocodataset.org/zips/train2014.zip
+
+Object Detection Head:                             
+https://nlp.cs.unc.edu/data/lxmert_data/mscoco_imgfeat/train2014_obj36.zip (36 object features)
+Simplified Head:                        
+http://images.cocodataset.org/zips/train2014.zip
 
 # Evluation and Improvement
 ## Evluation
@@ -32,9 +35,11 @@ Actually, our solution did not achieve our expectation. The performance showed t
 Through the analysis of the results and model, we though reasons are following:
 
 **1. Gaps between train dataset and test dataset**
+
 Simpons images are very different from natural images, the visual gaps cause bad performance
  
 **2. We use simplified visual head**
+
 Object detection head would spend too much computation resources, so we just used simplified head in the competition
 
 ## Improvement
@@ -44,5 +49,5 @@ and pretrained large model, there are many available solutions that we can refer
 
 
 # Reference
-https://github.com/hengyuan-hu/bottom-up-attention-vqa
+https://github.com/hengyuan-hu/bottom-up-attention-vqa                                        
 https://github.com/SatyamGaba/visual_question_answering
