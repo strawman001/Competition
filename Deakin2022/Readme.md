@@ -25,7 +25,8 @@ For limitation of computation resources, we also provide a simplified visual hea
 We use COCO VQA Dataset as train dataset for our model cannot converge on abstract scene dataset.
 
 Object Detection Head:                             
-https://nlp.cs.unc.edu/data/lxmert_data/mscoco_imgfeat/train2014_obj36.zip (36 object features)
+https://nlp.cs.unc.edu/data/lxmert_data/mscoco_imgfeat/train2014_obj36.zip (36 object features)        
+
 Simplified Head:                        
 http://images.cocodataset.org/zips/train2014.zip
 
